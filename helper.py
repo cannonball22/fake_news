@@ -7,7 +7,8 @@ import pandas as pd
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import re
-
+import nltk
+nltk.download('stopwords')
 
 #model = joblib.load(os.path.join(os.getcwd(), "static\\model.pkl"))
 #vectorization = joblib.load(os.path.join(os.getcwd(), "static\\tfidfvect.pkl"))
