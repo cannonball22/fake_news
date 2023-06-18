@@ -11,6 +11,8 @@ st.title('Fake news dashboard')
 
 #fake_news_det(query_params["input"][0])
 try:
-    st.write(fake_news_det(query_params["input"][0]))
+    response = fake_news_det(query_params["input"][0])
+    st.write(response)
+    st.json({'response': response})
 except:
     st.write("error")
